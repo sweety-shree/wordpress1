@@ -1,29 +1,25 @@
-         version: ‘3.3’
-         services:
-            db:
-                  image: mysql: 8.0.19
-                  command: ‘default-authentication-plugins= mysql_native_password’
-                  volumes:
-                    -db-data: /var/lib/mysql
-                  restart: always
-                  environment:
-                    -MYSQL_ROOT_PASSWORD= wordpress1   
-                    -MYSQL_DATABASE= sushree 
-                    -MYSQL_USER= sweety
-                    -MYSQL_PASSWORD= happynewyear123 
-                  expose: 
-                    -3306
-                    -33060
-            wordpress: 
-                  image: wordpress: latest
-                  ports:
-                    -80: 80
-                  restart: always
-                  environment:
-                    -WORDPRES_DB_HOST= db
-                    -WORDPRES_DB_USER= sweety
-                    -WORDPRES_DB_PASSWORD= happynewyear123 
-                    -WORDPRES_DB_NAME= sushree
-            volumes:
-              db_data:
-
+version: '3.3'
+services:
+  db:
+    image: mysql:8.0.19
+    command: 'default-authentication-plugin=mysql_native_password'
+    volumes:
+      - db_data:/var/lib/mysql  # Add a colon here
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=wordpress
+      - MYSQL_DATABASE=chintu
+      - MYSQL_USER=vivek
+      - MYSQL_PASSWORD=vivek2143
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - 80:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=vivek
+      - WORDPRESS_DB_PASSWORD=vivek2143
+      - WORDPRESS_DB_NAME=chintu
+volumes:
+  db_data:
