@@ -8,7 +8,7 @@
                   restart: always
                   environment:
                     -MYSQL_ROOT_PASSWORD= wordpress1   
-                    -MYSQL_DATABASE= sushree
+                    -MYSQL_DATABASE= sushree 
                     -MYSQL_USER= sweety
                     -MYSQL_PASSWORD= happynewyear123 
                   expose: 
