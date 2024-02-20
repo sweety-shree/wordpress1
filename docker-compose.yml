@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=wordpress
-      - MYSQL_DATABASE=chintu
+      - MYSQL_DATABASE=yuva
       - MYSQL_USER=vivek
       - MYSQL_PASSWORD=sushree123
   wordpress:
@@ -18,7 +18,7 @@ services:
     restart: always
     environment:
       - WORDPRESS_DB_HOST=db
-      - WORDPRESS_DB_USER=vivek
+      - WORDPRESS_DB_USER=yuva
       - WORDPRESS_DB_PASSWORD=sushree123
       - WORDPRESS_DB_NAME=chintu
 volumes:
