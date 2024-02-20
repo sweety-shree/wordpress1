@@ -10,7 +10,7 @@ services:
       - MYSQL_ROOT_PASSWORD=wordpress
       - MYSQL_DATABASE=chintu
       - MYSQL_USER=vivek
-      - MYSQL_PASSWORD=vivek2143
+      - MYSQL_PASSWORD=sushree123
   wordpress:
     image: wordpress:latest
     ports:
@@ -19,7 +19,7 @@ services:
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_USER=vivek
-      - WORDPRESS_DB_PASSWORD=vivek2143
+      - WORDPRESS_DB_PASSWORD=sushree123
       - WORDPRESS_DB_NAME=chintu
 volumes:
   db_data:
