@@ -7,7 +7,7 @@ services:
       - db_data:/var/lib/mysql  # Add a colon here
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=wordpress1
+      - MYSQL_ROOT_PASSWORD=wordpress111
       - MYSQL_DATABASE=yuva
       - MYSQL_USER=vivek
       - MYSQL_PASSWORD=sushree123
