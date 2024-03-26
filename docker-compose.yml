@@ -9,7 +9,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=wordpress111
       - MYSQL_DATABASE=yuva
-      - MYSQL_USER=vivek
+      - MYSQL_USER=yuva
       - MYSQL_PASSWORD=sushree123
   wordpress:
     image: wordpress:latest
